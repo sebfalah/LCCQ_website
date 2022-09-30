@@ -263,7 +263,7 @@ template {
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0.5rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.2;
 }
 h1, .h1 {
@@ -8044,6 +8044,12 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
         padding-left: 0;
    }
 }
+
+.logo-subtitle{
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+}
+
 .hero .hero-bg .hero-text-area .hero-title, .hero .hero-bg .hero-text-area .hero-subtitle {
     font-family: "Montserrat", sans-serif;
     color: #fff;
@@ -8055,7 +8061,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 }
 @media only screen and (min-width: 575px) {
     .hero .hero-bg .hero-text-area .title-welcome {
-        font-size: 5rem;
+        font-size: 3.5rem;
    }
 }
 .hero .hero-bg .hero-text-area .hero-title {
@@ -8083,7 +8089,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 }
 .ourHistory .ourHistory-background {
     background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-    background-color: #131313;
+    background-color: #36454F;
     background-size: 20px 20px;
 }
 .ourHistory .ourHistory-background .our-history-desktop .first-item {
@@ -8099,8 +8105,8 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
     left: -60px;
 }
 .ourHistory .ourHistory-background .ourHistory-card .ourHistory-card-title {
-    color: #FE2A00;
-    
+    color: #8d1e0d;
+    font-weight: bold;
     font-size: 3.5rem;
     font-family: "Open Sans", sans-serif;
 }
@@ -8250,14 +8256,16 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
     z-index: 100;
 }
 .contact .contact-card .contact-card-contact {
-    background-color: #262228;
+    background-color: #36454F;
     position: relative;
     left: -60px;
 }
 .contact .contact-card .contact-card-contact .contact-card-contact-title {
-    color: #ab9678;
+    color: #FFFFFF;
     font-size: 3rem;
-    font-family: "Kristi", cursive;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: "Montserrat", cursive;
 }
 .contact .contact-card .contact-card-contact .contact-card-contact-address, .contact .contact-card .contact-card-contact .contact-card-contact-phone, .contact .contact-card .contact-card-contact .contact-card-contact-email {
     color: #fff;
@@ -8316,7 +8324,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 }
 .footer .footer-background {
     padding-bottom: 0;
-    background-color: #262228;
+    background-color: #36454F;
     color: #fff;
 }
 .footer .footer-background .uk-margin-small {
@@ -8345,8 +8353,9 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
    }
 }
 .footer .footer-background .footer-left .footer-left-text {
-    color: #999;
-    padding: 15px 0;
+    color: #E7E9EC;
+    font-weight: bold;
+    padding: 17px 0;
 }
 .footer .footer-background .footer-left .footer-left-icons .footer-left-icons-ul {
     padding-top: 15px;
