@@ -3286,7 +3286,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .navbar-brand {
     display: inline-block;
     padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
+    padding-bottom: 0rem;
     margin-right: 1rem;
     font-size: 1.25rem;
     line-height: inherit;
@@ -3482,6 +3482,13 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     .navbar-expand-xl .navbar-toggler {
         display: none;
    }
+    
+   @media (max-width: 767px){
+    .elementor:not(.elementor-edit-area-active) .elementor-hidden-phone {
+        display: block;
+        }
+    }
+
 }
 .navbar-expand {
     flex-flow: row nowrap;
@@ -7907,14 +7914,14 @@ header .uk-navbar-right ul .uk-navbar-toggle-icon svg {
     width: 32px !important;
 }
 header .menu-slide-custom {
-    background-color: #262228;
+    background-color: #8E1F0E;
 }
 header .menu-slide-custom .menu-slide-custom-ul .menu-slide-custom-ul-li .menu-slide-custom-ul-li-a {
     font-size: 1.6em !important;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
 header .menu-slide-custom .menu-slide-custom-ul .menu-slide-custom-ul-li .menu-slide-custom-ul-li-a:hover {
     color: #fff;
@@ -7938,7 +7945,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
     font-size: 0.8rem;
     padding: 20px 0;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
 @media only screen and (min-width: 575px) {
     .modal-iframe .modal-iframe-body .modal-iframe-text {
@@ -7949,7 +7956,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
     background-color: #fff;
     border: 0;
     color: #000;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     border-radius: 30px;
     font-weight: 800;
     font-size: 0.7rem;
@@ -7970,7 +7977,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
     background-color: #fff;
     border: 0;
     color: #000;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     border-radius: 30px;
     font-weight: 800;
 }
@@ -7983,7 +7990,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 }
 .listMenu-details .list-menu-details-card .list-menu-details-title {
     font-size: 1.6rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     color: #666;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -7998,7 +8005,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
     text-align: left;
     font-size: 0.8rem;
     color: #666;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
 .listMenu-details .list-menu-details-card .listMenu-card-options {
     padding-top: 5px;
@@ -8012,14 +8019,14 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 }
 .listMenu-details .list-menu-details-card .extra-style {
     font-size: 1.6rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     color: #666;
     font-weight: 300;
     text-transform: uppercase;
 }
 .listMenu-details .listMenu-Detail-bottom {
     color: #666;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     font-size: 0.9rem;
     font-weight: 700;
     text-align: center;
@@ -8046,18 +8053,18 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 }
 
 .logo-subtitle{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     color: #FFFFFF;
 }
 
 .hero .hero-bg .hero-text-area .hero-title, .hero .hero-bg .hero-text-area .hero-subtitle {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     color: #fff;
 }
 .hero .hero-bg .hero-text-area .title-welcome {
     color: floralwhite;
     font-size: 2rem;
-    font-family: "Montserrat", cursive;
+    font-family: "Century Gothic", cursive;
 }
 @media only screen and (min-width: 575px) {
     .hero .hero-bg .hero-text-area .title-welcome {
@@ -8087,59 +8094,59 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
         font-size: 2rem;
    }
 }
-.ourHistory .ourHistory-background {
-    background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-    background-color: #36454F;
-    background-size: 20px 20px;
+.nosotrosHistoria .nosotrosHistoria-background {
+    background: rgb(8,5,11);
+    background: linear-gradient(90deg, rgba(8,5,11,0.7290266448376226) 100%, rgba(131,18,26,1) 100%, rgba(2,2,22,0.15199583251269255) 100%);
+    /* background-size: 10px 5px; */
 }
-.ourHistory .ourHistory-background .our-history-desktop .first-item {
+.nosotrosHistoria .nosotrosHistoria-background .our-history-desktop .first-item {
     z-index: 100;
 }
-.ourHistory .ourHistory-background .our-history-desktop .ourHistory-card {
+.nosotrosHistoria .nosotrosHistoria-background .our-history-desktop .nosotrosHistoria-card {
     position: relative;
     right: -60px;
     text-align: justify;
 }
-.ourHistory .ourHistory-background .our-history-desktop .contact-card-contact {
+.nosotrosHistoria .nosotrosHistoria-background .our-history-desktop .contact-card-contact {
     position: relative;
     left: -60px;
 }
-.ourHistory .ourHistory-background .ourHistory-card .ourHistory-card-title {
+.nosotrosHistoria .nosotrosHistoria-background .nosotrosHistoria-card .nosotrosHistoria-card-title {
     color: #8d1e0d;
     font-weight: bold;
     font-size: 3.5rem;
     font-family: "Open Sans", sans-serif;
 }
-.ourHistory .ourHistory-background .ourHistory-card .ourHistory-card-subtitle {
+.nosotrosHistoria .nosotrosHistoria-background .nosotrosHistoria-card .nosotrosHistoria-card-subtitle {
     font-size: 1.8rem;
     text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
 @media only screen and (min-width: 992px) {
-    .ourHistory .ourHistory-background .ourHistory-card .ourHistory-card-subtitle {
+    .nosotrosHistoria .nosotrosHistoria-background .nosotrosHistoria-card .nosotrosHistoria-card-subtitle {
         font-size: 2.4rem;
    }
 }
-.ourHistory .ourHistory-background .ourHistory-card .ourHistory-card-subtitleAlt {
+.nosotrosHistoria .nosotrosHistoria-background .nosotrosHistoria-card .nosotrosHistoria-card-subtitleAlt {
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 10px;
 }
-.ourHistory .ourHistory-background .ourHistory-card .ourHistory-card-subtitleAlt, .ourHistory .ourHistory-background .ourHistory-card .ourHistory-card-paragraph {
+.nosotrosHistoria .nosotrosHistoria-background .nosotrosHistoria-card .nosotrosHistoria-card-subtitleAlt, .nosotrosHistoria .nosotrosHistoria-background .nosotrosHistoria-card .nosotrosHistoria-card-paragraph {
     font-family: "Open Sans", sans-serif;
 }
-.ourHistory .ourHistory-background .ourHistory-card .ourHistory-card-paragraph {
+.nosotrosHistoria .nosotrosHistoria-background .nosotrosHistoria-card .nosotrosHistoria-card-paragraph {
     font-size: 15px;
 }
 .listMenu .listMenu-background-new {
-    background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-    background-color: #131313;
-    background-size: 20px 20px;
+    background: rgb(8,5,11);
+    background: linear-gradient(90deg, rgba(8,5,11,0.7290266448376226) 100%, rgba(131,18,26,1) 100%, rgba(2,2,22,0.15199583251269255) 100%);
+    
 }
 .listMenu .listMenu-background .listMenu-Header-SubHeader {
     text-align: center;
     color: #666;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
 .listMenu .listMenu-background .listMenu-Header-SubHeader .listMenu-Header {
     font-size: 2rem;
@@ -8158,7 +8165,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 }
 .listMenu .listMenu-background .listMenu-title {
     font-size: 1.6rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     font-weight: 800;
     text-align: center;
     color: #fff;
@@ -8179,7 +8186,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
     text-align: left;
     font-size: 0.8rem;
     color: #666;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
 .listMenu .listMenu-background .listMenu-content .listMenu-conten-body .listMenu-card-body .listMenu-card-options {
     padding-top: 5px;
@@ -8195,12 +8202,12 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 .listMenu .uk-subnav-pill .uk-active a {
     background-color: #262228;
     color: #fff;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     font-weight: 800;
 }
 .listMenu .uk-subnav-pill > * > :first-child {
     color: #ab9678;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     font-weight: 800;
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -8216,7 +8223,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 .experience .experience-background .experience-content .experience-title {
     font-size: 1rem;
     font-weight: 800;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     text-transform: uppercase;
     color: #fff;
     padding-top: 80px;
@@ -8237,11 +8244,11 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 }
 .experience .experience-background .experience-content .experience-card .experience-card-body .experience-card-title {
     font-size: 2rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
 .experience .experience-background .experience-content .experience-card .experience-card-body .experience-card-job {
     font-size: 0.8rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
 .experience .experience-background .experience-content .experience-card .experience-card-body .experience-card-content {
     font-size: 1rem;
@@ -8265,7 +8272,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
     font-size: 3rem;
     font-style: italic;
     font-weight: bolder;
-    font-family: "Montserrat", cursive;
+    font-family: "Century Gothic", cursive;
 }
 .contact .contact-card .contact-card-contact .contact-card-contact-address, .contact .contact-card .contact-card-contact .contact-card-contact-phone, .contact .contact-card .contact-card-contact .contact-card-contact-email {
     color: #fff;
@@ -8289,9 +8296,11 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
     height: 100% !important;
 }
 .contact .contact-card-mobile .contact-card-contact-title {
-    color: #ab9678;
+    color: #FFFFFF;
     font-size: 3rem;
-    font-family: "Kristi", cursive;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: "Century Gothic", cursive;
 }
 .contact .contact-card-mobile .contact-card-contact-address, .contact .contact-card-mobile .contact-card-contact-phone, .contact .contact-card-mobile .contact-card-contact-email {
     color: #fff;
@@ -8302,7 +8311,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 }
 .contact .contactMultiple-title {
     font-size: 1.6rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     font-weight: 800;
     text-align: center;
     color: #666;
@@ -8312,12 +8321,12 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 .contact .uk-subnav-pill .uk-active a {
     background-color: #262228;
     color: #fff;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     font-weight: 800;
 }
 .contact .uk-subnav-pill > * > :first-child {
     color: #ab9678;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     font-weight: 800;
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -8355,7 +8364,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 .footer .footer-background .footer-left .footer-left-text {
     color: #E7E9EC;
     font-weight: bold;
-    padding: 17px 0;
+    padding: 10px 0;
 }
 .footer .footer-background .footer-left .footer-left-icons .footer-left-icons-ul {
     padding-top: 15px;
@@ -8443,7 +8452,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 .footer .footer-background .footer-right .footer-right-buttons .appStore a span, .footer .footer-background .footer-right .footer-right-buttons .googlePlay a span {
     font-size: 0.5rem;
     color: #fff;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     font-weight: 800;
     padding-left: 10px;
 }
@@ -8458,7 +8467,7 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 .footer .footer-background .copy-right {
     font-size: 0.8rem;
     color: #666;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Century Gothic", sans-serif;
     padding: 10px 0;
     text-align: center;
 }
@@ -8466,24 +8475,4 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
     color: #fff;
     font-weight: 800;
 }
-.equipo-trabajo {
-    padding-bottom: 50px;
-}
-.equipo-trabajo .equipo-header {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 50px 0;
-}
-.equipo-trabajo .custom-table-team .custom-table-team-head tr th {
-    font-family: "Open Sans", sans-serif;
-    color: #666;
-    font-weight: 700;
-}
-.equipo-trabajo .custom-table-team .custom-table-team-body tr td {
-    font-family: "Open Sans", sans-serif;
-    color: #666;
-}
+
