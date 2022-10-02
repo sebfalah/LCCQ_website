@@ -7882,6 +7882,10 @@ header .uk-sticky {
 header .uk-navbar-container {
     padding: 0;
 }
+
+header .uk-navbar-container-menu {
+    padding: 0;
+}
 @media only screen and (min-width: 768px) {
     header .uk-navbar-container {
         padding: 10px 0;
@@ -7985,46 +7989,46 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
     color: #000;
     background-color: #fff;
 }
-.listMenu-details {
+.menuPlatos-details {
     padding-top: 50px;
 }
-.listMenu-details .list-menu-details-card .list-menu-details-title {
+.menuPlatos-details .list-menu-details-card .list-menu-details-title {
     font-size: 1.6rem;
     font-family: "Century Gothic", sans-serif;
     color: #666;
     padding-bottom: 10px;
     text-transform: uppercase;
 }
-.listMenu-details .list-menu-details-card .list-menu-details-title-padding-card3 {
+.menuPlatos-details .list-menu-details-card .list-menu-details-title-padding-card3 {
     padding-bottom: 50px;
 }
-.listMenu-details .list-menu-details-card .list-menu-details {
+.menuPlatos-details .list-menu-details-card .list-menu-details {
     padding-bottom: 10px;
 }
-.listMenu-details .list-menu-details-card .listMenu-card-title, .listMenu-details .list-menu-details-card .listMenu-card-price, .listMenu-details .list-menu-details-card .listMenu-card-options, .listMenu-details .list-menu-details-card .listMenu-card-icon {
+.menuPlatos-details .list-menu-details-card .menuPlatos-card-title, .menuPlatos-details .list-menu-details-card .menuPlatos-card-price, .menuPlatos-details .list-menu-details-card .menuPlatos-card-options, .menuPlatos-details .list-menu-details-card .menuPlatos-card-icon {
     text-align: left;
     font-size: 0.8rem;
     color: #666;
     font-family: "Century Gothic", sans-serif;
 }
-.listMenu-details .list-menu-details-card .listMenu-card-options {
+.menuPlatos-details .list-menu-details-card .menuPlatos-card-options {
     padding-top: 5px;
 }
-.listMenu-details .list-menu-details-card .listMenu-card-title, .listMenu-details .list-menu-details-card .listMenu-card-price {
+.menuPlatos-details .list-menu-details-card .menuPlatos-card-title, .menuPlatos-details .list-menu-details-card .menuPlatos-card-price {
     color: #000;
 }
-.listMenu-details .list-menu-details-card .listMenu-card-title {
+.menuPlatos-details .list-menu-details-card .menuPlatos-card-title {
     font-weight: 800;
     text-transform: uppercase;
 }
-.listMenu-details .list-menu-details-card .extra-style {
+.menuPlatos-details .list-menu-details-card .extra-style {
     font-size: 1.6rem;
     font-family: "Century Gothic", sans-serif;
     color: #666;
     font-weight: 300;
     text-transform: uppercase;
 }
-.listMenu-details .listMenu-Detail-bottom {
+.menuPlatos-details .menuPlatos-Detail-bottom {
     color: #666;
     font-family: "Century Gothic", sans-serif;
     font-size: 0.9rem;
@@ -8138,32 +8142,32 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
 .nosotrosHistoria .nosotrosHistoria-background .nosotrosHistoria-card .nosotrosHistoria-card-paragraph {
     font-size: 15px;
 }
-.listMenu .listMenu-background-new {
+.menuPlatos .menuPlatos-background-new {
     background: rgb(8,5,11);
     background: linear-gradient(90deg, rgba(8,5,11,0.7290266448376226) 100%, rgba(131,18,26,1) 100%, rgba(2,2,22,0.15199583251269255) 100%);
     
 }
-.listMenu .listMenu-background .listMenu-Header-SubHeader {
+.menuPlatos .menuPlatos-background .menuPlatos-Header-SubHeader {
     text-align: center;
     color: #666;
     font-family: "Century Gothic", sans-serif;
 }
-.listMenu .listMenu-background .listMenu-Header-SubHeader .listMenu-Header {
+.menuPlatos .menuPlatos-background .menuPlatos-Header-SubHeader .menuPlatos-Header {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 800;
 }
-.listMenu .listMenu-background .listMenu-Header-SubHeader .listMenu-SubHeader {
+.menuPlatos .menuPlatos-background .menuPlatos-Header-SubHeader .menuPlatos-SubHeader {
     font-size: 1.3rem;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.listMenu .listMenu-background .listMenu-Header-SubHeader .listMenu-SubHeader-2 {
+.menuPlatos .menuPlatos-background .menuPlatos-Header-SubHeader .menuPlatos-SubHeader-2 {
     font-size: 1.3rem;
     font-weight: 700;
     padding-top: 10px;
 }
-.listMenu .listMenu-background .listMenu-title {
+.menuPlatos .menuPlatos-background .menuPlatos-title {
     font-size: 1.6rem;
     font-family: "Century Gothic", sans-serif;
     font-weight: 800;
@@ -8172,40 +8176,40 @@ header .menu-slide-custom .menu-slide-custom-ul .bar-button {
     padding-bottom: 30px;
     text-transform: uppercase;
 }
-.listMenu .listMenu-background .listMenu-content .listMenu-conten-header {
+.menuPlatos .menuPlatos-background .menuPlatos-content .menuPlatos-conten-header {
     display: none;
 }
-.listMenu .listMenu-background .listMenu-content .listMenu-conten-body .listMenu-card-body {
+.menuPlatos .menuPlatos-background .menuPlatos-content .menuPlatos-conten-body .menuPlatos-card-body {
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 70px;
 }
-.listMenu .listMenu-background .listMenu-content .listMenu-conten-body .listMenu-card-body .listMenu-card-title, .listMenu .listMenu-background .listMenu-content .listMenu-conten-body .listMenu-card-body .listMenu-card-price, .listMenu .listMenu-background .listMenu-content .listMenu-conten-body .listMenu-card-body .listMenu-card-options, .listMenu .listMenu-background .listMenu-content .listMenu-conten-body .listMenu-card-body .listMenu-card-icon {
+.menuPlatos .menuPlatos-background .menuPlatos-content .menuPlatos-conten-body .menuPlatos-card-body .menuPlatos-card-title, .menuPlatos .menuPlatos-background .menuPlatos-content .menuPlatos-conten-body .menuPlatos-card-body .menuPlatos-card-price, .menuPlatos .menuPlatos-background .menuPlatos-content .menuPlatos-conten-body .menuPlatos-card-body .menuPlatos-card-options, .menuPlatos .menuPlatos-background .menuPlatos-content .menuPlatos-conten-body .menuPlatos-card-body .menuPlatos-card-icon {
     text-align: left;
     font-size: 0.8rem;
     color: #666;
     font-family: "Century Gothic", sans-serif;
 }
-.listMenu .listMenu-background .listMenu-content .listMenu-conten-body .listMenu-card-body .listMenu-card-options {
+.menuPlatos .menuPlatos-background .menuPlatos-content .menuPlatos-conten-body .menuPlatos-card-body .menuPlatos-card-options {
     padding-top: 5px;
 }
-.listMenu .listMenu-background .listMenu-content .listMenu-conten-body .listMenu-card-body .listMenu-card-title, .listMenu .listMenu-background .listMenu-content .listMenu-conten-body .listMenu-card-body .listMenu-card-price {
+.menuPlatos .menuPlatos-background .menuPlatos-content .menuPlatos-conten-body .menuPlatos-card-body .menuPlatos-card-title, .menuPlatos .menuPlatos-background .menuPlatos-content .menuPlatos-conten-body .menuPlatos-card-body .menuPlatos-card-price {
     color: #000;
 }
-.listMenu .listMenu-background .listMenu-content .listMenu-conten-body .listMenu-card-body .listMenu-card-title {
+.menuPlatos .menuPlatos-background .menuPlatos-content .menuPlatos-conten-body .menuPlatos-card-body .menuPlatos-card-title {
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
 }
-.listMenu .uk-subnav-pill .uk-active a {
+.menuPlatos .uk-subnav-pill .uk-active a {
     background-color: #262228;
     color: #fff;
     font-family: "Century Gothic", sans-serif;
     font-weight: 800;
 }
-.listMenu .uk-subnav-pill > * > :first-child {
+.menuPlatos .uk-subnav-pill > * > :first-child {
     color: #ab9678;
     font-family: "Century Gothic", sans-serif;
     font-weight: 800;
