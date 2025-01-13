@@ -1,62 +1,251 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>La Casa del Cangrejo</title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/stylebs.css"/>
-    <link rel="stylesheet" type="text/css" href="stylebs.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
-    
-    <!--logo facebook y tripadvisor-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+  <meta name="description" content="Reservas - La Casa del Cangrejo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas | La Casa del Cangrejo</title>
+
+  <!-- Si deseas, puedes incluir también los mismos links CSS de UIkit del index -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #fef9f4;
+    }
+    /* Encabezado con logo y botón de regresar */
+    .reservation-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .reservation-header .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .reservation-header .logo img {
+      height: 60px; /* Ajusta el tamaño si lo deseas */
+    }
+    .reservation-header .logo-subtitle {
+      margin: 0;
+      margin-left: 10px;
+      font-weight: bold;
+      color: #cc3300;
+    }
+    /* Formato del formulario */
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 16px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 12px 0 4px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      margin-bottom: 8px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #cc3300;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #e74c3c;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 24px;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
-<nav role="navigation" class="nav navbar-inverse navbar-fixed-top"> 
-  <div class="container-fluid"> 
-    <div class="navbar-header"> <h3><a href="http://lacasadelcangrejo.com/">La Casa del Cangrejo</a> </h3> 
-    </div> 
-    <ul class="nav navbar-nav pull-right nav-custom"> 
-      <li><a class="navSection"  style="font-weight: bold;" href="http://lacasadelcangrejo.com/menu.html">Menú </a></li> 
-      <li><a class="navSection" style="font-weight: bold;" href="http://lacasadelcangrejo.com/#contacto">Ubícanos </a> </li> 
-      <li><a target="_blank" class="navSection" style="font-weight: bold;" href="https://www.facebook.com/lacasadelcangrejo/">Promociones </a> </li> 
-      <li><a class="navSection" style="font-weight: bold;" href="http://lacasadelcangrejo.com/#nosotrosC">Quiénes somos </a> </li> 
-      <li><a class="navSection" style="font-weight: bold;" href="http://lacasadelcangrejo.com/#contacto">Contacto</a> </li> 
-      <li><a class="navSection" style="font-weight: bold;" href="http://lacasadelcangrejo.com/reservas.html">Reservas</a> </li>
-    </ul> 
-  </div> 
-    </nav>
-    
-    <section>
-        <div class="row">
-            <div class="col-md-12 col-sm-12 text-center"> <h1 id="titulo" class="menuT">RESERVACIONES</h1> 
-        </div>
-        </div>
-    </section>
-    
-    <section>
-        <div class="row">
-            <div class="col-md-3 col-sm-3 text-center"></div>
-            <div class="col-md-6 col-sm-6 text-center"> <img alt="logo" class="img-logo" src="images/logo.png"/> 
-            </div>
-        </div>
-    </section> 
-    
-    <section>
-    <div clas="row">
-        <div class="benefeats">
-            <div class="col-md-6 col-sm-8">
-                <h4>Ingresa tus datos para confirmar la reserva a través de BENEFEATS</h4> </br> <h4> Recuerda que no aceptamos reservas los fines de semana!</h4>
-                <iframe class="benefeats-widget-1" width="100%" height="775" src="https://widgets.benefeats.com/reservation/restaurant/5d7bdd793ebdd327ef142360/1?lang=es" frameborder="0"></iframe>
-            </div>
-        </div>
-    </div>
-    </section>
 
+  <!-- Encabezado con logo y botón de regreso al index -->
+  <div class="reservation-header">
+    <!-- Logo con enlace a la página principal -->
+    <a class="logo navbar-brand" href="index.html" title="logo">
+      <img src="images/logo.png" alt="logo">
+      <p class="logo-subtitle">LA CASA DEL CANGREJO</p>
+    </a>
+    <!-- Botón para regresar -->
+    <button class="uk-button uk-button-default" onclick="window.location.href='index.html'">
+      Regresar
+    </button>
+  </div>
+
+  <h1 style="text-align:center; color: #cc3300;">Haz tu Reserva</h1>
+
+  <!-- The reservation form -->
+  <form id="reservationForm">
+    <label for="name">Nombre</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Teléfono</label>
+    <input type="text" id="phone" name="phone" required
+           placeholder="Ej: 0123456789 (10 dígitos)">
+
+    <label for="date">Fecha de la reserva</label>
+    <input type="date" id="date" name="date" required>
+
+    <!-- Nuevo campo: Hora -->
+    <label for="time">Hora</label>
+    <select id="time" name="time" required>
+      <!-- Opciones se llenarán dinámicamente con JavaScript -->
+    </select>
+
+    <label for="guests">Número de personas</label>
+    <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+    <button type="submit">Reservar</button>
+  </form>
+
+  <div class="footer">
+    &copy; 2025 La Casa del Cangrejo
+  </div>
+
+  <!-- Si deseas usar UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+  <script>
+    // Replace with your actual deployed Google Apps Script Web App URL
+    const googleScriptURL = "https://script.google.com/macros/s/AKfycbz710sC_2kYfPO2KjCVTspyarXCjsli_8Pv-JoXVYNTNw8O-pMgFxMOpi0Ge_3rJfDC/exec";
+
+    // Definimos los rangos de horas en intervalos de 30 minutos
+    const timesWeekday = [
+      "12:00", "12:30", "13:00", "13:30",
+      "14:00", "14:30", "15:00", "15:30",
+      "16:00", "16:30"
+    ];
+    const timesFriday = [
+      "12:00", "12:30", "13:00", "13:30",
+      "14:00", "14:30", "15:00", "15:30",
+      "16:00", "16:30", "17:00", "17:30",
+      "18:00", "18:30", "19:00", "19:30",
+      "20:00"
+    ];
+
+    function populateTimeSlots(dayOfWeek) {
+      const timeSelect = document.getElementById('time');
+      timeSelect.innerHTML = "";
+
+      // Viernes => dayOfWeek === 5
+      const slots = (dayOfWeek === 5) ? timesFriday : timesWeekday;
+
+      slots.forEach(time => {
+        const option = document.createElement('option');
+        option.value = time;
+        option.textContent = time;
+        timeSelect.appendChild(option);
+      });
+    }
+
+    // Evento: cuando cambie la fecha, validamos si es fin de semana o lunes
+    document.getElementById('date').addEventListener('change', function() {
+      const dateInput = this.value;
+      if (!dateInput) return;
+
+      const [year, month, day] = dateInput.split('-').map(num => parseInt(num, 10));
+      const reservationDate = new Date(Date.UTC(year, month - 1, day));
+      const dayOfWeek = reservationDate.getUTCDay(); // 0=Dom,1=Lun,...6=Sab
+
+      // Fin de semana
+      if (dayOfWeek === 0 || dayOfWeek === 6) {
+        alert("No se aceptan reservas en fin de semana");
+        this.value = "";
+        document.getElementById('time').innerHTML = "";
+        return;
+      }
+      // Lunes
+      if (dayOfWeek === 1) {
+        alert("El restaurante está cerrado los lunes");
+        this.value = "";
+        document.getElementById('time').innerHTML = "";
+        return;
+      }
+
+      // Si es martes, miércoles, jueves o viernes, poblamos la lista de horas
+      populateTimeSlots(dayOfWeek);
+    });
+
+    // Manejo del formulario en submit
+    document.getElementById('reservationForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // 1) Validar el teléfono (que empiece con 0 y tenga 10 dígitos)
+      const phoneValue = document.getElementById('phone').value.trim();
+      const phonePattern = /^0\d{9}$/;
+      if (!phonePattern.test(phoneValue)) {
+        alert("El número de teléfono debe comenzar con 0 y tener 10 dígitos.");
+        return;
+      }
+
+      // 2) Validar que la fecha no sea fin de semana ni lunes (doble-check)
+      const dateInput = document.getElementById('date').value;
+      if (!dateInput) {
+        alert("Por favor elige una fecha válida.");
+        return;
+      }
+      const [year, month, day] = dateInput.split('-').map(num => parseInt(num, 10));
+      const reservationDate = new Date(Date.UTC(year, month - 1, day));
+      const dayOfWeek = reservationDate.getUTCDay();
+
+      if (dayOfWeek === 0 || dayOfWeek === 6) {
+        alert("No aceptamos reservas en fin de semana");
+        return;
+      }
+      if (dayOfWeek === 1) {
+        alert("El restaurante está cerrado los lunes");
+        return;
+      }
+
+      // 3) Asegurar que haya escogido hora
+      const timeValue = document.getElementById('time').value;
+      if (!timeValue) {
+        alert("Por favor selecciona una hora de llegada.");
+        return;
+      }
+
+      // Todo OK, enviamos a Google Apps Script
+      const form = document.getElementById('reservationForm');
+      const formData = new FormData(form);
+
+      fetch(googleScriptURL, {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(text => {
+        alert(text);
+        form.reset();
+        document.getElementById('time').innerHTML = "";
+      })
+      .catch(err => {
+        console.error('Error:', err);
+        alert('Error al guardar la reserva. Intenta nuevamente.');
+      });
+    });
+  </script>
 </body>
 </html>
-
-
