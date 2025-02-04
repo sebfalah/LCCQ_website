@@ -151,7 +151,7 @@
       timeSelect.innerHTML = "";
 
       // Viernes => dayOfWeek === 5
-      const slots = (dayOfWeek === 5) ? timesFriday : timesWeekday;
+      const slots = (dayOfWeek === 4 || dayOfWeek === 5) ? timesFriday : timesWeekday;
 
       slots.forEach(time => {
         const option = document.createElement('option');
