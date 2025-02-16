@@ -1,455 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
+<head>
 
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-5D557PD');</script>
-	<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5D557PD');</script>
+    <!-- End Google Tag Manager -->
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="name" content="content">
+    <title>La Casa del Cangrejo</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kristi&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
+    <!-- Inline CSS to force uniform thumbnail sizes in the menu but keep original sizes in the lightbox -->
+    <style>
+      /* Adjust the height (250px) as needed for your layout */
+      .menuPlatos-conten-body .uk-card-media-top {
+        height: 180px;
+        overflow: hidden; /* Hides overflow if image is taller */
+      }
+      .menuPlatos-conten-body .uk-card-media-top img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Crop images evenly */
+      }
+    </style>
+    <!-- End inline CSS -->
 
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-		<meta name="name" content="content">
-		<title>La Casa del Cangrejo</title>
-		<link rel="icon" href="images/favicon.png">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Kristi&display=swap" rel="stylesheet">
-      
-	
-		<link href="css/main.css" rel="stylesheet">
-	</head>
+</head>
 
-	<body id="website-top" class="page page-La Casa del Cangrejo">
-	<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D557PD"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+<body id="website-top" class="page page-La Casa del Cangrejo">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D557PD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-	<!-- Header / Navbar start -->
-		<div class="main overflow-hidden">
-			<div id="hero" class="section hero">
-				<div class="hero-menu">
-					<header>
-						<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-							<div class="uk-container">
-								<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="position: relative; z-index: 980;">
-									<div class="uk-navbar-left">
-										<a class="logo navbar-brand" href="https://lacasadelcangrejo.com/" title="logo">
-											<img src="images/logo.png" class="" alt="logo">
-											<p class="logo-subtitle">LA CASA DEL CANGREJO</p>
-										</a>
-									</div>
-									<div class="uk-navbar-right">
-										<ul class="uk-navbar-nav header-nav-ul-custom">
-											<li class="uk-animation-toggle uk-visible@s">
-												<div id="modal-container" class="uk-modal-container modal-iframe" uk-modal>
-													<div class="uk-modal-dialog uk-modal-body modal-iframe-body">
-														<button class="uk-modal-close-default" type="button" uk-close></button>
-													</div>
-												</div>
-											</li>
-											<li><a href="#offcanvas-slide" class="uk-navbar-toggle header-nav-ul-toggle-custom" uk-navbar-toggle-icon uk-toggle></a></li>
-											<li class=""><a class="icon-nav" href="https://www.facebook.com/lacasadelcangrejo" target="_blank"><span uk-icon="facebook"></span></a></li>
-											<li class=""><a class="icon-nav" href="https://www.instagram.com/lacasadelcangrejo/" target="_blank"><span uk-icon="instagram"></span></a></li>
-											<li class=""><a class="icon-nav" href="https://www.tripadvisor.es/Restaurant_Review-g294308-d7363855-Reviews-La_Casa_del_Cangrejo-Quito_Pichincha_Province.html" target="_blank"><span uk-icon="tripadvisor"></span></a></li>
-											<li class=""><a class="icon-nav" href="https://g.page/lacasadelcangrejoquito?gm" target="_blank"><span uk-icon="google"></span></a></li>
-										</ul>
-									</div>
-								</nav>
-							</div>
-						</div>
-						<div id="offcanvas-slide" uk-offcanvas>
-							<div class="uk-offcanvas-bar menu-slide-custom">
-								<ul class="uk-nav uk-nav-default menu-slide-custom-ul">
-									<li class="menu-slide-custom-ul-li">
-										<a class="smooth-scroll nav-link menu-slide-custom-ul-li-a" href="/menu.html" data-offset="60"> Menu </a>
-									</li>
-									<li class="menu-slide-custom-ul-li">
-										<a class="smooth-scroll nav-link menu-slide-custom-ul-li-a" href="#nosotrosC" data-offset="100"> Nosotros </a>
-									</li>							
-									<li class="menu-slide-custom-ul-li">
-										<a class="smooth-scroll nav-link menu-slide-custom-ul-li-a" href="#domicilio" data-offset="60"> Pide a Domicilio </a>
-									</li>
-									<li class="menu-slide-custom-ul-li">
-										<a class="smooth-scroll nav-link menu-slide-custom-ul-li-a" href="/reservas.html" data-offset="60"> Reservas </a>
-									</li>
-									<li class="menu-slide-custom-ul-li">
-										<a class="smooth-scroll nav-link menu-slide-custom-ul-li-a" href="#contacto" data-offset="60"> Contacto y Ubicación </a>
-									</li>
-									<li class="menu-slide-custom-ul-li">
-										<a class="smooth-scroll nav-link menu-slide-custom-ul-li-a" href="#footer" data-offset="60"> Horarios </a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</header>
-				<!-- End Header / Navbar  -->
-				</div>
-				<div class="hero-bg">
-					<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="min-height: 450; max-height: 900; animation: fade">
-						<ul class="uk-slideshow-items shadow">
-                            <li>
-								<img class="uk-visible @media" src="images/background1.jpg" alt="" uk-cover>
+    <!-- Header / Navbar start -->
+    <div class="main overflow-hidden">
+        <div id="hero" class="section hero">
+            <div class="hero-menu">
+                <header>
+                    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+                        <div class="uk-container">
+                            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="position: relative; z-index: 980;">
+                                <div class="uk-navbar-left">
+                                    <a class="logo navbar-brand" href="https://lacasadelcangrejo.com/" title="logo">
+                                        <img src="images/logo.png" class="" alt="logo">
+                                        <p class="logo-subtitle">LA CASA DEL CANGREJO</p>
+                                    </a>
+                                </div>
+                                <div class="uk-navbar-right">
+                                    <ul class="uk-navbar-nav header-nav-ul-custom">
+                                        <li class="uk-animation-toggle uk-visible@s">
+                                            <div id="modal-container" class="uk-modal-container modal-iframe" uk-modal>
+                                                <div class="uk-modal-dialog uk-modal-body modal-iframe-body">
+                                                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#offcanvas-slide" class="uk-navbar-toggle header-nav-ul-toggle-custom" uk-navbar-toggle-icon uk-toggle></a>
+                                        </li>
+                                        <li class="">
+                                            <a class="icon-nav" href="https://www.facebook.com/lacasadelcangrejo" target="_blank">
+                                                <span uk-icon="facebook"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a class="icon-nav" href="https://www.instagram.com/lacasadelcangrejo/" target="_blank">
+                                                <span uk-icon="instagram"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a class="icon-nav" href="https://www.tripadvisor.es/Restaurant_Review-g294308-d7363855-Reviews-La_Casa_del_Cangrejo-Quito_Pichincha_Province.html" target="_blank">
+                                                <span uk-icon="tripadvisor"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a class="icon-nav" href="https://g.page/lacasadelcangrejoquito?gm" target="_blank">
+                                                <span uk-icon="google"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="offcanvas-slide" uk-offcanvas>
+                        <div class="uk-offcanvas-bar menu-slide-custom">
+                            <ul class="uk-nav uk-nav-default menu-slide-custom-ul">
+                                <li class="menu-slide-custom-ul-li">
+                                    <a class="smooth-scroll nav-link menu-slide-custom-ul-li-a" href="/menu.html" data-offset="60"> Menu </a>
+                                </li>
+                                <li class="menu-slide-custom-ul-li">
+                                    <a class="smooth-scroll nav-link menu-slide-custom-ul-li-a" href="#nosotrosC" data-offset="100"> Nosotros </a>
+                                </li>
+                                <li class="menu-slide-custom-ul-li">
+                                    <a class="smooth-scroll nav-link menu-slide-custom-ul-li-a" href="#domicilio" data-offset="60"> Pide a Domicilio </a>
+                                </li>
+                                <li class="menu-slide-custom-ul-li">
+                                    <a class="smooth-scroll nav-link menu-slide-custom-ul-li-a" href="/reservas.html" data-offset="60"> Reservas </a>
+                                </li>
+                                <li class="menu-slide-custom-ul-li">
+                                    <a class="smooth-scroll nav-link menu-slide-custom-ul-li-a" href="#contacto" data-offset="60"> Contacto y Ubicación </a>
+                                </li>
+                                <li class="menu-slide-custom-ul-li">
+                                    <a class="smooth-scroll nav-link menu-slide-custom-ul-li-a" href="#footer" data-offset="60"> Horarios </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <!-- End Header / Navbar  -->
+            </div>
+            <div class="hero-bg">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="min-height: 450; max-height: 900; animation: fade">
+                    <ul class="uk-slideshow-items shadow">
+                        <li>
+                            <img class="uk-visible @media" src="images/background1.jpg" alt="" uk-cover>
+                            <div class="uk-container uk-position-relative uk-height-1-1">
+                                <div class="uk-light hero-text-area uk-position-center-left">
+                                    <h1 class="title-welcome">Bienvenidos a</h1>
+                                    <h1 class="hero-title">La Casa del Cangrejo</h1>
+                                    <p class="hero-subtitle">Por más de 36 años, el mejor cangrejo de Quito.</p>
+                                    <div class="uk-animation-toggle">
+                                        <div class="call-to-action-buttons">
+                                            <a class="button-background-white uk-button uk-button-default tm-button-default uk-animation-shake uk-animation-reverse" href="/reservas.html" target="_blank" uk-toggle> Realiza tu reserva aquí </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="uk-visible @media" src="images/background1.jpg" alt="" uk-cover>
+                            <div class="uk-container uk-position-relative uk-height-1-1">
+                                <div class="uk-light hero-text-area uk-position-center-left">
+                                    <h2 class="title-welcome">Bienvenidos a</h2>
+                                    <h1 class="hero-title">La Casa del Cangrejo</h1>
+                                    <p class="hero-subtitle">Por más de 35 años, el mejor cangrejo de Quito.</p>
+                                    <div class="uk-animation-toggle">
+                                        <div class="call-to-action-buttons">
+                                            <a class="button-background-white uk-button uk-button-default tm-button-default uk-animation-shake uk-animation-reverse" href="/reservas.html" target="_blank" uk-toggle> Realiza tu reserva aquí </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="uk-visible @media" src="images/background1.jpg" alt="" uk-cover>
+                            <div class="uk-container uk-position-relative uk-height-1-1">
+                                <div class="uk-light hero-text-area uk-position-center-left">
+                                    <h2 class="title-welcome">Bienvenidos a</h2>
+                                    <h1 class="hero-title">La Casa del Cangrejo</h1>
+                                    <p class="hero-subtitle">Por más de 35 años, el mejor cangrejo de Quito.</p>
+                                    <div class="uk-animation-toggle">
+                                        <div id="nosotrosC" class="call-to-action-buttons">
+                                            <a class="button-background-white uk-button uk-button-default tm-button-default uk-animation-shake uk-animation-reverse" href="/reservas.html" target="_blank" uk-toggle> Realiza tu reserva aquí </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-								<div class="uk-container uk-position-relative uk-height-1-1">
-									<div class="uk-light hero-text-area uk-position-center-left">
-										<h1 class="title-welcome">Bienvenidos a</h1>
-										<h1 class="hero-title">La Casa del Cangrejo</h1>
-										<p class="hero-subtitle">Por más de 36 años, el mejor cangrejo de Quito.</p>
-										<div class="uk-animation-toggle">
-											<div class="call-to-action-buttons">
-												<a class="button-background-white uk-button uk-button-default tm-button-default uk-animation-shake uk-animation-reverse" href="/reservas.html" target="_blank" uk-toggle> Realiza tu reserva aquí </a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<img class="uk-visible @media" src="images/background1.jpg" alt="" uk-cover>
-								
-								<div class="uk-container uk-position-relative uk-height-1-1">
-									<div class="uk-light hero-text-area uk-position-center-left">
-										<h2 class="title-welcome">Bienvenidos a</h2>
-										<h1 class="hero-title">La Casa del Cangrejo</h1>
-										<p class="hero-subtitle">Por más de 35 años, el mejor cangrejo de Quito.</p>
-										<div class="uk-animation-toggle">
-											<div class="call-to-action-buttons">
-												<a class="button-background-white uk-button uk-button-default tm-button-default uk-animation-shake uk-animation-reverse" href="/reservas.html" target="_blank" uk-toggle> Realiza tu reserva aquí </a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<img class="uk-visible @media" src="images/background1.jpg" alt="" uk-cover>
-							
-								<div class="uk-container uk-position-relative uk-height-1-1">
-									<div class="uk-light hero-text-area uk-position-center-left">
-										<h2 class="title-welcome">Bienvenidos a</h2>
-										<h1 class="hero-title">La Casa del Cangrejo</h1>
-										<p class="hero-subtitle">Por más de 35 años, el mejor cangrejo de Quito.</p>
-										<div class="uk-animation-toggle">
-											<div id="nosotrosC" class="call-to-action-buttons">
-												<a class="button-background-white uk-button uk-button-default tm-button-default uk-animation-shake uk-animation-reverse" href="/reservas.html" target="_blank" uk-toggle> Realiza tu reserva aquí </a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-						
-					</div>
-				</div>
-			</div>
-			<div id="nosotrosC" class="section nosotrosHistoria">
-				<div class="uk-section uk-preserve-color nosotrosHistoria-background">
-					<div class="uk-container">
-						<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin nosotrosHistoria-card our-history-mobile" uk-grid>
-							<div class="uk-flex-last@s uk-card-media-right uk-cover-container uk-card-large uk-animation-slide-right">
-								<img src="images/rest-lleno.jpg" alt="" uk-cover>
-								<canvas width="600" height="400"></canvas>
-							</div>
-							<div class="uk-card-hover uk-flex uk-flex-middle uk-animation-slide-left">
-								<div class="uk-card-body uk-card-small">
-									<div class="nosotrosHistoria-card-title">La Casa del Cangrejo</div>
-									<div class="nosotrosHistoria-card-subtitle"></div>
-									<div class="nosotrosHistoria-card-subtitleAlt">Los mejores cangrejos y mariscos de la ciudad desde hace más de 35 años. </div>
-									<div class="nosotrosHistoria-card-paragraph">Desde 1986, en la ciudad de Quito, fuimos los pioneros en brindar lo mejor en cangrejo introduciendo un distintivo sabor y una importante variedad de platos. Utilizando siempre los productos más frescos y de mejor calidad buscamos superar las expectativas de nuestros clientes.<br><br> Durante tres décadas sirviendo en un ambiente familiar e informal a tres generaciones de ecuatorianos y extranjeros llegando a ser parte de la tradición de esta ciudad.<br><br> </div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="domicilio" class="section menuPlatos">
-				<div class="uk-section uk-preserve-color menuPlatos-background">
-					<div class="uk-container">
-						<div class="menuPlatos-Header-SubHeader">
-							<div class="menuPlatos-Header">PIDE TAMBIÉN A DOMICILIO:</div>
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<a target="_blank" href="https://www.ubereats.com/ec-en/quito/food-delivery/la-casa-del-cangrejo/yc4QKWK9QImdX8SEfaluLA"><img src="images/uber.jpg" alt="uber" width="25%" height="25%"></a>
-								<a target="_blank" href="https://www.rappi.com.ec/restaurantes/2517-la-casa-del-cangrejo?utm_source=google&pid=google&utm_medium=cpc&af_channel=cpc&utm_campaign=CX_EC_PR_SE_GO_SEU_ALL_ALL_RAP_ALL_NA_00000_BRO&c=CX_EC_PR_SE_GO_SEU_ALL_ALL_RAP_ALL_NA_00000_BRO&utm_id=11851285627&af_c_id=11851285627&utm_term=&af_keywords=&utm_content=&af_ad=&gclid=Cj0KCQjwyt-ZBhCNARIsAKH1175HzZXg0607NipBW_CLNrPitjS1BbBdL2fpakU3Q_Qhfl5AfJ8xXHUaArFsEALw_wcB"><img src="images/rappi.png" alt="rappi" width="25%" height="25%"></a>
-								</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="menu" class="section menuPlatos">
-				<div class="uk-section uk-preserve-color menuPlatos-background menuPlatos-background-new">
-					<div class="uk-container">
-						<div id="menuPlatos-title" class="menuPlatos-title">Nuestros Platos Estrella</div>
-						<div id="menuPlatos-content" class="menuPlatos-content" uk-filter="target: .js-filter">
-							<ul class="menuPlatos-conten-header uk-subnav uk-subnav-pill">
-								<li class="uk-active" uk-filter-control="[data-price='Nuestros Platos']"><a href="#">Nuestros platos</a></li>
-								<li id="filter-nuestros-tragos" uk-filter-control="[data-price='Nuestros Tragos']"><a href="#">Nuestros Tragos</a></li>
-							</ul>
-							<ul class="menuPlatos-conten-body js-filter uk-child-width-1-2 uk-child-width-1-4@m uk-text-center" uk-grid uk-lightbox="animation: slide" uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
-								<li data-price="Nuestros Platos">
-									<div class="" uk-grid>
-										<div>
-											<div class="uk-card uk-card-default">
-												<div class="uk-card-media-top">
-													<div>
-														<a class="uk-inline" href="images/PLATO1DIG-min.jpg" data-caption="Ceviche de Cangrejo">
-															<img src="images/PLATO1DIG-min.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="uk-card-body menuPlatos-card-body">
-													<div class="" uk-grid>
-														<div class="uk-width-expand">
-															<div class="uk-card-title menuPlatos-card-title">Ceviche de Cangrejo</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li data-price="Nuestros Platos">
-									<div class="" uk-grid>
-										<div>
-											<div class="uk-card uk-card-default">
-												<div class="uk-card-media-top">
-													<div>
-														<a class="uk-inline" href="images/PLATO10DIG-min.jpg" data-caption="Patas Gordas al ajillo">
-															<img src="images/PLATO10DIG-min.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="uk-card-body menuPlatos-card-body">
-													<div class="" uk-grid>
-														<div class="uk-width-expand">
-															<div class="uk-card-title menuPlatos-card-title">Patas Gordas al ajillo</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li data-price="Nuestros Platos">
-									<div class="" uk-grid>
-										<div>
-											<div class="uk-card uk-card-default">
-												<div class="uk-card-media-top">
-													<div>
-														<a class="uk-inline" href="images/PLATO2DIG-min.jpg" data-caption="Conchas Asadas">
-															<img src="images/PLATO2DIG-min.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="uk-card-body menuPlatos-card-body">
-													<div class="" uk-grid>
-														<div class="uk-width-expand">
-															<div class="uk-card-title menuPlatos-card-title">Conchas asadas</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li data-price="Nuestros Platos">
-									<div class="" uk-grid>
-										<div>
-											<div class="uk-card uk-card-default">
-												<div class="uk-card-media-top">
-													<div>
-														<a class="uk-inline" href="images/PLATO4DIG-min.jpg" data-caption="Carapacho Relleno">
-															<img src="images/PLATO4DIG-min.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="uk-card-body menuPlatos-card-body">
-													<div class="" uk-grid>
-														<div class="uk-width-expand">
-															<div class="uk-card-title menuPlatos-card-title">Carapacho Relleno</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li data-price="Nuestros Platos">
-									<div class="" uk-grid>
-										<div>
-											<div class="uk-card uk-card-default">
-												<div class="uk-card-media-top">
-													<div>
-														<a class="uk-inline" href="images/PLATO6DIG-min.jpg" data-caption="Tabla de Patas Gordas">
-															<img src="images/PLATO6DIG-min.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="uk-card-body menuPlatos-card-body">
-													<div class="" uk-grid>
-														<div class="uk-width-expand">
-															<div class="uk-card-title menuPlatos-card-title">Tabla de Patas Gordas</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li data-price="Nuestros Platos">
-									<div class="" uk-grid>
-										<div>
-											<div class="uk-card uk-card-default">
-												<div class="uk-card-media-top">
-													<div>
-														<a class="uk-inline" href="images/PLATO8DIG-min.jpg" data-caption="Plato Especial">
-															<img src="images/PLATO8DIG-min.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="uk-card-body menuPlatos-card-body">
-													<div class="" uk-grid>
-														<div class="uk-width-expand">
-															<div class="uk-card-title menuPlatos-card-title">Plato Especial</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li data-price="Nuestros Platos">
-									<div class="" uk-grid>
-										<div>
-											<div class="uk-card uk-card-default">
-												<div class="uk-card-media-top">
-													<div>
-														<a class="uk-inline" href="images/Cev. Camaron2.jpg" data-caption="Ceviche de Camaron">
-															<img src="images/Cev. Camaron2.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="uk-card-body menuPlatos-card-body">
-													<div class="" uk-grid>
-														<div class="uk-width-expand">
-															<div class="uk-card-title menuPlatos-card-title">Ceviche de Camarón</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li data-price="Nuestros Platos">
-									<div class="" uk-grid>
-										<div>
-											<div class="uk-card uk-card-default">
-												<div class="uk-card-media-top">
-													<div>
-														<a class="uk-inline" href="images/PLATO12.jpg" data-caption="Camarones al Ajillo">
-															<img src="images/PLATO12.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="uk-card-body menuPlatos-card-body">
-													<div class="" uk-grid>
-														<div class="uk-width-expand">
-															<div class="uk-card-title menuPlatos-card-title">Camarones al Ajillo</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="menuPlatos-details">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="contacto" class="section contact">
-				<div class="uk-section uk-preserve-color">
-					<div class="uk-container">
-						<div class="uk-child-width-expand@s uk-visible@m uk-flex-middle contact-card" uk-grid>
-							<div class="uk-grid-item-match">
-								<div class="google-maps">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.195095960535!2d-78.487161!3d-0.179347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76d597ab7b7ab698!2sLa+Casa+del+Cangrejo!5e0!3m2!1sen!2sec!4v1494275759405" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-								</div>
-							</div>
-							<div class="uk-grid-item-match contact-card-left">
-								<div class="uk-card uk-light uk-background-secondary uk-card-body contact-card-contact">
-									<div class="contact-card-contact-title">Contáctanos</div>
-									<div class="contact-card-contact-address"><span uk-icon="location"></span>Juan González N35-141 e Ignacio San María, edif. Metrópoli, Quito</div>
-									<div class="contact-card-contact-phone"><span uk-icon="receiver"></span><a href="tel:+593 244 3636">+593 244 3636</a></div>
-									<div class="contact-card-contact-email"><span uk-icon="location"></span><a href="mailto: lacasadelcangrejo@yahoo.com">lacasadelcangrejo@yahoo.com</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@m uk-margin nosotrosHistoria-card uk-hidden@m our-history-mobile contact-card-mobile" uk-grid>
-							<div class="uk-grid-item-match">
-								<div class="google-maps">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.195095960535!2d-78.487161!3d-0.179347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76d597ab7b7ab698!2sLa+Casa+del+Cangrejo!5e0!3m2!1sen!2sec!4v1494275759405" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-								</div>
-							</div>
-							<div class="uk-grid-item-match uk-flex-first">
-								<div class="uk-card uk-light uk-background-secondary uk-card-body contact-card-contact">
-									<div class="contact-card-contact-title">Contáctanos</div>
-									<div class="contact-card-contact-address"><span uk-icon="location"></span>Juan González N35-141 e Ignacio San María, edif. Metrópoli, Quito</div>
-									<div class="contact-card-contact-phone"><span uk-icon="receiver"></span><a href="tel:+593 244 3636">+593 244 3636</a></div>
-									<div class="contact-card-contact-email"><span uk-icon="location"></span><a href="mailto: lacasadelcangrejo@yahoo.com">lacasadelcangrejo@yahoo.com</a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="footer" class="section footer">
-				<div class="uk-section uk-preserve-color nosotrosHistoria-background footer-background">
-					<div class="uk-container">
-						<div class="uk-child-width-expand@s" uk-grid>
-							<div class="footer-left">
-								<div class="footer-left-logo">
-									<a class="logo navbar-brand" href="https://lacasadelcangrejo.com/" title="logo">
-										<img src="images/logo.png" class="" alt="logo">
-									</a>
-								</div>
-								<div class="footer-left-text">Más Fresco, ni en el mar</div>
-								<div class="footer-left-icons">
-									<div class="footer-left-icons-ul uk-flex">
-										<div class="footer-left-icons-ul-li"><a href="https://www.facebook.com/lacasadelcangrejo" target="_blank"><span uk-icon="facebook"></span></a></div>
-										<div class="footer-left-icons-ul-li"><a href="https://www.instagram.com/lacasadelcangrejo/" target="_blank"><span uk-icon="instagram"></span></a></div>
-										<div class="footer-left-icons-ul-li"><a href="https://g.page/lacasadelcangrejoquito?gm" target="_blank"><span uk-icon="google"></span></a></div>
-										<div class="footer-left-icons-ul-li"><a href="https://www.tripadvisor.es/Restaurant_Review-g294308-d7363855-Reviews-La_Casa_del_Cangrejo-Quito_Pichincha_Province.html" target="_blank"><span uk-icon="tripadvisor"></span></a></div>
-									</div>
-								</div>
-							</div>
-							<div class="footer-right">
-								<div class="footer-right-header">Horario</div>
-								<div class="footer-right-item"><span>Martes, Miércoles, Sábado, Domingo y Feriados: 12h00 a 17h00</span></div>
-								<div class="footer-rightS-item"><span>Jueves y Viernes: 12h00 a 21h00</span></div>
-							</div>
-							
-						</div>
-					</div>
-					<hr class="uk-margin-small">
-					<div class="uk-container">
-						<div class="copy-right"> © ArzianKorpen 2023   <span> LCCQ</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
-		
-	</body>
+        <div id="nosotrosC" class="section nosotrosHistoria">
+            <div class="uk-section uk-preserve-color nosotrosHistoria-background">
+                <div class="uk-container">
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin nosotrosHistoria-card our-history-mobile" uk-grid>
+                        <div class="uk-flex-last@s uk-card-media-right uk-cover-container uk-card-large uk-animation-slide-right">
+                            <img src="images/rest-lleno.jpg" alt="" uk-cover>
+                            <canvas width="600" height="400"></canvas>
+                        </div>
+                        <div class="uk-card-hover uk-flex uk-flex-middle uk-animation-slide-left">
+                            <div class="uk-card-body uk-card-small">
+                                <div class="nosotrosHistoria-card-title">La Casa del Cangrejo</div>
+                                <div class="nosotrosHistoria-card-subtitle"></div>
+                                <div class="nosotrosHistoria-card-subtitleAlt">
+                                    Los mejores cangrejos y mariscos de la ciudad desde hace más de 35 años.
+                                </div>
+                                <div class="nosotrosHistoria-card-paragraph">
+                                    Desde 1986, en la ciudad de Quito, fuimos los pioneros en brindar lo mejor en cangrejo introduciendo un distintivo sabor y una importante variedad de platos. Utilizando siempre los productos más frescos y de mejor calidad buscamos superar las expectativas de nuestros clientes.<br><br>
+                                    Durante tres décadas sirviendo en un ambiente familiar e informal a tres generaciones de ecuatorianos y extranjeros llegando a ser parte de la tradición de esta ciudad.<br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div id="domicilio" class="section menuPlatos">
+            <div class="uk-section uk-preserve-color menuPlatos-background">
+                <div class="uk-container">
+                    <div class="menuPlatos-Header-SubHeader">
+                        <div class="menuPlatos-Header">PIDE TAMBIÉN A DOMICILIO:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <a target="_blank" href="https://www.ubereats.com/ec-en/quito/food-delivery/la-casa-del-cangrejo/yc4QKWK9QImdX8SEfaluLA">
+                                <img src="images/uber.jpg" alt="uber" width="25%" height="25%">
+                            </a>
+                            <a target="_blank" href="https://www.rappi.com.ec/restaurantes/2517-la-casa-del-cangrejo?utm_source=google&pid=google&utm_medium=cpc&af_channel=cpc&utm_campaign=CX_EC_PR_SE_GO_SEU_ALL_ALL_RAP_ALL_NA_00000_BRO&c=CX_EC_PR_SE_GO_SEU_ALL_ALL_RAP_ALL_NA_00000_BRO&utm_id=11851285627&af_c_id=11851285627&utm_term=&af_keywords=&utm_content=&af_ad=&gclid=Cj0KCQjwyt-ZBhCNARIsAKH1175HzZXg0607NipBW_CLNrPitjS1BbBdL2fpakU3Q_Qhfl5AfJ8xXHUaArFsEALw_wcB">
+                                <img src="images/rappi.png" alt="rappi" width="25%" height="25%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu" class="section menuPlatos">
+            <div class="uk-section uk-preserve-color menuPlatos-background menuPlatos-background-new">
+                <div class="uk-container">
+                    <div id="menuPlatos-title" class="menuPlatos-title">Nuestros Platos Estrella</div>
+                    <div id="menuPlatos-content" class="menuPlatos-content" uk-filter="target: .js-filter">
+                        <ul class="menuPlatos-conten-header uk-subnav uk-subnav-pill">
+                            <li class="uk-active" uk-filter-control="[data-price='Nuestros Platos']">
+                                <a href="#">Nuestros platos</a>
+                            </li>
+                            <li id="filter-nuestros-tragos" uk-filter-control="[data-price='Nuestros Tragos']">
+                                <a href="#">Nuestros Tragos</a>
+                            </li>
+                        </ul>
+
+                        <ul class="menuPlatos-conten-body js-filter uk-child-width-1-2 uk-child-width-1-4@m uk-text-center" 
+                            uk-grid 
+                            uk-lightbox="animation: slide" 
+                            uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
+
+                            <li data-price="Nuestros Platos">
+                                <div uk-grid>
+                                    <div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <div>
+                                                    <a class="uk-inline" href="images/PLATO1DIG-min.jpg" data-caption="Ceviche de Cangrejo">
+                                                        <img src="images/PLATO1DIG-min.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-body menuPlatos-card-body">
+                                                <div uk-grid>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-card-title menuPlatos-card-title">Ceviche de Cangrejo</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li data-price="Nuestros Platos">
+                                <div uk-grid>
+                                    <div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <div>
+                                                    <a class="uk-inline" href="images/PLATO10DIG-min.jpg" data-caption="Patas Gordas al ajillo">
+                                                        <img src="images/PLATO10DIG-min.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-body menuPlatos-card-body">
+                                                <div uk-grid>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-card-title menuPlatos-card-title">Patas Gordas al ajillo</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li data-price="Nuestros Platos">
+                                <div uk-grid>
+                                    <div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <div>
+                                                    <a class="uk-inline" href="images/PLATO2DIG-min.jpg" data-caption="Conchas Asadas">
+                                                        <img src="images/PLATO2DIG-min.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-body menuPlatos-card-body">
+                                                <div uk-grid>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-card-title menuPlatos-card-title">Conchas asadas</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li data-price="Nuestros Platos">
+                                <div uk-grid>
+                                    <div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <div>
+                                                    <a class="uk-inline" href="images/PLATO4DIG-min.jpg" data-caption="Carapacho Relleno">
+                                                        <img src="images/PLATO4DIG-min.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-body menuPlatos-card-body">
+                                                <div uk-grid>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-card-title menuPlatos-card-title">Carapacho Relleno</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li data-price="Nuestros Platos">
+                                <div uk-grid>
+                                    <div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <div>
+                                                    <a class="uk-inline" href="images/PLATO6DIG-min.jpg" data-caption="Tabla de Patas Gordas">
+                                                        <img src="images/PLATO6DIG-min.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-body menuPlatos-card-body">
+                                                <div uk-grid>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-card-title menuPlatos-card-title">Tabla de Patas Gordas</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li data-price="Nuestros Platos">
+                                <div uk-grid>
+                                    <div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <div>
+                                                    <a class="uk-inline" href="images/PLATO8DIG-min.jpg" data-caption="Plato Especial">
+                                                        <img src="images/PLATO8DIG-min.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-body menuPlatos-card-body">
+                                                <div uk-grid>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-card-title menuPlatos-card-title">Plato Especial</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Two images needing uniform sizing -->
+                            <li data-price="Nuestros Platos">
+                                <div uk-grid>
+                                    <div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <div>
+                                                    <a class="uk-inline" href="images/Combo Criollo.jpeg" data-caption="Combo Criollo">
+                                                        <img src="images/Combo Criollo.jpeg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-body menuPlatos-card-body">
+                                                <div uk-grid>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-card-title menuPlatos-card-title">Combo Criollo</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-price="Nuestros Platos">
+                                <div uk-grid>
+                                    <div>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <div>
+                                                    <a class="uk-inline" href="images/ChopSuey.jpeg" data-caption="Chop Suey">
+                                                        <img src="images/ChopSuey.jpeg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-body menuPlatos-card-body">
+                                                <div uk-grid>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-card-title menuPlatos-card-title">Chop Suey</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- End two images needing uniform sizing -->
+
+                        </ul>
+                    </div>
+                    <div class="menuPlatos-details"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contacto" class="section contact">
+            <div class="uk-section uk-preserve-color">
+                <div class="uk-container">
+                    <div class="uk-child-width-expand@s uk-visible@m uk-flex-middle contact-card" uk-grid>
+                        <div class="uk-grid-item-match">
+                            <div class="google-maps">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.195095960535!2d-78.487161!3d-0.179347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76d597ab7b7ab698!2sLa+Casa+del+Cangrejo!5e0!3m2!1sen!2sec!4v1494275759405" 
+                                    width="100%" 
+                                    height="400" 
+                                    frameborder="0" 
+                                    style="border:0;" 
+                                    allowfullscreen="">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="uk-grid-item-match contact-card-left">
+                            <div class="uk-card uk-light uk-background-secondary uk-card-body contact-card-contact">
+                                <div class="contact-card-contact-title">Contáctanos</div>
+                                <div class="contact-card-contact-address">
+                                    <span uk-icon="location"></span>Juan González N35-141 e Ignacio San María, edif. Metrópoli, Quito
+                                </div>
+                                <div class="contact-card-contact-phone">
+                                    <span uk-icon="receiver"></span>
+                                    <a href="tel:+593 244 3636">+593 244 3636</a>
+                                </div>
+                                <div class="contact-card-contact-email">
+                                    <span uk-icon="location"></span>
+                                    <a href="mailto: lacasadelcangrejo@yahoo.com">lacasadelcangrejo@yahoo.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@m uk-margin nosotrosHistoria-card uk-hidden@m our-history-mobile contact-card-mobile" uk-grid>
+                        <div class="uk-grid-item-match">
+                            <div class="google-maps">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.195095960535!2d-78.487161!3d-0.179347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76d597ab7b7ab698!2sLa+Casa+del+Cangrejo!5e0!3m2!1sen!2sec!4v1494275759405" 
+                                    width="100%" 
+                                    height="400" 
+                                    frameborder="0" 
+                                    style="border:0;" 
+                                    allowfullscreen="">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="uk-grid-item-match uk-flex-first">
+                            <div class="uk-card uk-light uk-background-secondary uk-card-body contact-card-contact">
+                                <div class="contact-card-contact-title">Contáctanos</div>
+                                <div class="contact-card-contact-address">
+                                    <span uk-icon="location"></span>Juan González N35-141 e Ignacio San María, edif. Metrópoli, Quito
+                                </div>
+                                <div class="contact-card-contact-phone">
+                                    <span uk-icon="receiver"></span>
+                                    <a href="tel:+593 244 3636">+593 244 3636</a>
+                                </div>
+                                <div class="contact-card-contact-email">
+                                    <span uk-icon="location"></span>
+                                    <a href="mailto: lacasadelcangrejo@yahoo.com">lacasadelcangrejo@yahoo.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer" class="section footer">
+            <div class="uk-section uk-preserve-color nosotrosHistoria-background footer-background">
+                <div class="uk-container">
+                    <div class="uk-child-width-expand@s" uk-grid>
+                        <div class="footer-left">
+                            <div class="footer-left-logo">
+                                <a class="logo navbar-brand" href="https://lacasadelcangrejo.com/" title="logo">
+                                    <img src="images/logo.png" class="" alt="logo">
+                                </a>
+                            </div>
+                            <div class="footer-left-text">Más Fresco, ni en el mar</div>
+                            <div class="footer-left-icons">
+                                <div class="footer-left-icons-ul uk-flex">
+                                    <div class="footer-left-icons-ul-li">
+                                        <a href="https://www.facebook.com/lacasadelcangrejo" target="_blank">
+                                            <span uk-icon="facebook"></span>
+                                        </a>
+                                    </div>
+                                    <div class="footer-left-icons-ul-li">
+                                        <a href="https://www.instagram.com/lacasadelcangrejo/" target="_blank">
+                                            <span uk-icon="instagram"></span>
+                                        </a>
+                                    </div>
+                                    <div class="footer-left-icons-ul-li">
+                                        <a href="https://g.page/lacasadelcangrejoquito?gm" target="_blank">
+                                            <span uk-icon="google"></span>
+                                        </a>
+                                    </div>
+                                    <div class="footer-left-icons-ul-li">
+                                        <a href="https://www.tripadvisor.es/Restaurant_Review-g294308-d7363855-Reviews-La_Casa_del_Cangrejo-Quito_Pichincha_Province.html" target="_blank">
+                                            <span uk-icon="tripadvisor"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-right">
+                            <div class="footer-right-header">Horario</div>
+                            <div class="footer-right-item">
+                                <span>Martes, Miércoles, Sábado, Domingo y Feriados: 12h00 a 17h00</span>
+                            </div>
+                            <div class="footer-rightS-item">
+                                <span>Jueves y Viernes: 12h00 a 21h00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="uk-margin-small">
+                <div class="uk-container">
+                    <div class="copy-right"> © ArzianKorpen 2023 <span> LCCQ</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+</body>
 </html>
