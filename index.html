@@ -35,6 +35,26 @@
         height: 100%;
         object-fit: cover;
       }
+      /* === Banner cierre (modal) === */
+      .closure-title {
+        color: #cc0000; /* rojo */
+        margin-bottom: 8px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+      .closure-logo {
+        max-width: 140px;
+        height: auto;
+        margin: 6px auto 14px auto;
+        display: block;
+      }
+      .closure-text {
+        font-size: 1.25rem;
+        line-height: 1.7;
+      }
+      .closure-text strong {
+    font-size: 1.35rem;   
+      }
     </style>
     <!-- End inline CSS -->
 </head>
@@ -555,9 +575,54 @@
         </div>
     </div>
 
+    <!-- ===== Modal de cierre por veda ===== -->
+    <div id="closure-modal" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body uk-text-center">
+        <button id="closure-close" class="uk-modal-close-default" type="button" aria-label="Cerrar" uk-close></button>
+        <h3 class="closure-title">La Casa del Cangrejo</h3>
+        <img class="closure-logo" src="images/logo.png" alt="Logo La Casa del Cangrejo">
+        <p class="closure-text">
+          <strong>¡Hola!</strong> Debido a la <em>veda de cangrejo</em> estaremos cerrados desde el <strong>22 de agosto</strong> hasta el <strong>15 de septiembre</strong>.<br>
+          Atendemos con normalidad a partir del <strong>16 de septiembre</strong>. <br>¡Te esperamos!
+        </p>
+      </div>
+    </div>
+    <!-- ===== Fin Modal de cierre ===== -->
+
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+    <!-- ===== Lógica para mostrar el modal sólo entre 2025-08-22 y 2025-09-15 en Quito ===== -->
+    <script>
+    (function () {
+        function getLocalDateStamp(tz) {
+        const now = new Date();
+        const parts = new Intl.DateTimeFormat('en-CA', {
+            timeZone: tz,
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit'
+        }).format(now); 
+        return parts; // "2025-08-21"
+        }
+
+        const TZ = 'America/Guayaquil';
+        const today = getLocalDateStamp(TZ);
+        const start = '2025-08-21'; // inclusive (cámbialo si deseas otro inicio)
+        const end   = '2025-09-15'; // inclusive
+
+        const withinWindow = (today >= start && today <= end);
+
+        if (withinWindow) {
+        if (window.UIkit && UIkit.modal) {
+            const modal = UIkit.modal('#closure-modal');
+            modal.show();
+        }
+        }
+    })();
+    </script>
+    <!-- ===== Fin lógica modal ===== -->
 
 </body>
 </html>

@@ -34,8 +34,7 @@
         height: 60px;
       }
       .reservation-header .logo-subtitle {
-        margin: 0;
-        margin-left: 10px;
+        margin: 0 0 0 10px;
         font-weight: bold;
         color: #cc3300;
       }
@@ -75,6 +74,32 @@
         margin-top: 24px;
         color: #999;
       }
+
+      /* ===== Estilos banner/modal de veda ===== */
+      .closure-title {
+        color: #cc0000; /* rojo */
+        margin-bottom: 8px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+      .closure-logo {
+        max-width: 140px;
+        height: auto;
+        margin: 6px auto 14px auto;
+        display: block;
+      }
+      .closure-text {
+        font-size: 1.25rem;   /* texto más grande */
+        line-height: 1.7;     
+      }
+      .closure-text strong {
+        font-size: 1.35rem;   /* ¡Hola! un poco más grande */
+      }
+      .note {
+        font-size: 0.95rem; 
+        color: #c00; 
+        margin: 4px 0 0;
+      }
     </style>
   </head>
   
@@ -109,6 +134,9 @@
 
     <label for="date">Fecha de la reserva</label>
     <input type="date" id="date" name="date" required>
+    <!-- Mensaje de fecha bloqueada -->
+    <p id="dateMessage" class="uk-text-danger" style="margin:4px 0 0;"></p>
+    <p id="dateNote" class="note" style="display:none;"></p>
 
     <!-- Nuevo campo: Hora -->
     <label for="time">Hora</label>
@@ -126,13 +154,69 @@
     &copy; 2025 La Casa del Cangrejo
   </div>
 
-  <!-- Si deseas usar UIkit JS -->
+  <!-- ===== Modal de cierre por veda (mismo banner) ===== -->
+  <div id="closure-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-text-center">
+      <button id="closure-close" class="uk-modal-close-default" type="button" aria-label="Cerrar" uk-close></button>
+      <h3 class="closure-title">La Casa del Cangrejo</h3>
+      <img class="closure-logo" src="images/logo.png" alt="Logo La Casa del Cangrejo">
+      <p class="closure-text">
+        <strong>¡Hola!</strong> Debido a la <em>veda de cangrejo</em> estaremos cerrados desde el <strong>21 de agosto</strong> hasta el <strong>15 de septiembre</strong>.<br>
+        Atendemos con normalidad a partir del <strong>16 de septiembre</strong>.<br> ¡Te esperamos!
+      </p>
+    </div>
+  </div>
+  <!-- ===== Fin Modal de cierre ===== -->
+
+  <!-- UIkit JS -->
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
 
   <script>
     // Replace with your actual deployed Google Apps Script Web App URL
     const googleScriptURL = "https://script.google.com/macros/s/AKfycbz710sC_2kYfPO2KjCVTspyarXCjsli_8Pv-JoXVYNTNw8O-pMgFxMOpi0Ge_3rJfDC/exec";
+
+    // Fechas sin cupo (AAAA-MM-DD) adicionales puntuales
+    const blockedDates = ["2025-05-01","2025-05-23","2025-08-15"];
+
+    // ====== Ventana de cierre por veda ======
+    const TZ = 'America/Guayaquil';
+    const VEDA_START = '2025-08-21'; // inclusive
+    const VEDA_END   = '2025-09-15'; // inclusive
+
+    function getLocalDateStamp(tz) {
+      const now = new Date();
+      return new Intl.DateTimeFormat('en-CA', {
+        timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit'
+      }).format(now); // "YYYY-MM-DD"
+    }
+
+    function isWithinRange(isoDate, startIso, endIso) {
+      return isoDate >= startIso && isoDate <= endIso;
+    }
+
+    // ====== Mostrar siempre el modal si estamos dentro del rango de veda ======
+    (function showClosureBannerIfNeeded(){
+      const today = getLocalDateStamp(TZ);
+      if (isWithinRange(today, VEDA_START, VEDA_END)) {
+        if (window.UIkit && UIkit.modal) {
+          UIkit.modal('#closure-modal').show();
+        }
+      }
+    })();
+
+    // ====== Si hoy está dentro de la veda, guía al usuario a reservar desde 16/09 ======
+    (function adjustDatePickerMinIfClosed(){
+      const today = getLocalDateStamp(TZ);
+      const dateInput = document.getElementById('date');
+      const note = document.getElementById('dateNote');
+
+      if (isWithinRange(today, VEDA_START, VEDA_END)) {
+        dateInput.min = '2025-09-16';
+        note.style.display = 'block';
+        note.textContent = 'Las reservas estarán habilitadas a partir del 16 de septiembre.';
+      }
+    })();
 
     // Definimos los rangos de horas en intervalos de 30 minutos
     const timesWeekday = [
@@ -151,10 +235,8 @@
     function populateTimeSlots(dayOfWeek) {
       const timeSelect = document.getElementById('time');
       timeSelect.innerHTML = "";
-
-      // Viernes => dayOfWeek === 5
+      // Jue(4) y Vie(5) con horario extendido; Mar(2), Mié(3) con horario corto
       const slots = (dayOfWeek === 4 || dayOfWeek === 5) ? timesFriday : timesWeekday;
-
       slots.forEach(time => {
         const option = document.createElement('option');
         option.value = time;
@@ -163,10 +245,33 @@
       });
     }
 
-    // Evento: cuando cambie la fecha, validamos si es fin de semana o lunes
+    function clearTimeAndMessage() {
+      document.getElementById('time').innerHTML = "";
+      document.getElementById('dateMessage').textContent = "";
+    }
+
+    // Evento: cuando cambie la fecha
     document.getElementById('date').addEventListener('change', function() {
       const dateInput = this.value;
+      const msgEl = document.getElementById('dateMessage');
+      msgEl.textContent = ""; // limpia mensaje previo
       if (!dateInput) return;
+
+      // 0) ¿Cae en la veda (bloqueo por rango)?
+      if (isWithinRange(dateInput, VEDA_START, VEDA_END)) {
+        msgEl.textContent = "No hay reservas disponibles entre el 21 de agosto y el 15 de septiembre por veda de cangrejo.";
+        this.value = "";
+        clearTimeAndMessage();
+        return;
+      }
+
+      // 1) ¿Está bloqueada de forma puntual?
+      if (blockedDates.includes(dateInput)) {
+        msgEl.textContent = "Ya no hay reservas disponibles para la fecha seleccionada.";
+        this.value = "";
+        clearTimeAndMessage();
+        return;
+      }
 
       const [year, month, day] = dateInput.split('-').map(num => parseInt(num, 10));
       const reservationDate = new Date(Date.UTC(year, month - 1, day));
@@ -176,18 +281,18 @@
       if (dayOfWeek === 0 || dayOfWeek === 6) {
         alert("No se aceptan reservas en fin de semana");
         this.value = "";
-        document.getElementById('time').innerHTML = "";
+        clearTimeAndMessage();
         return;
       }
       // Lunes
       if (dayOfWeek === 1) {
         alert("El restaurante está cerrado los lunes");
         this.value = "";
-        document.getElementById('time').innerHTML = "";
+        clearTimeAndMessage();
         return;
       }
 
-      // Si es martes, miércoles, jueves o viernes, poblamos la lista de horas
+      // Si es martes(2), miércoles(3), jueves(4) o viernes(5), poblamos la lista de horas
       populateTimeSlots(dayOfWeek);
     });
 
@@ -195,7 +300,7 @@
     document.getElementById('reservationForm').addEventListener('submit', function(event) {
       event.preventDefault();
 
-      // 1) Validar el teléfono (que empiece con 0 y tenga 10 dígitos)
+      // 1) Validar el teléfono
       const phoneValue = document.getElementById('phone').value.trim();
       const phonePattern = /^0\d{9}$/;
       if (!phonePattern.test(phoneValue)) {
@@ -203,12 +308,25 @@
         return;
       }
 
-      // 2) Validar que la fecha no sea fin de semana ni lunes (doble-check)
+      // 2) Validar fecha
       const dateInput = document.getElementById('date').value;
       if (!dateInput) {
         alert("Por favor elige una fecha válida.");
         return;
       }
+
+      // 2a) Bloqueo por veda (rango)
+      if (isWithinRange(dateInput, VEDA_START, VEDA_END)) {
+        alert("No hay reservas disponibles entre el 21 de agosto y el 15 de septiembre por veda de cangrejo.");
+        return;
+      }
+
+      // 2b) ¿Bloqueada puntual?
+      if (blockedDates.includes(dateInput)) {
+        alert("Ya no hay reservas disponibles para la fecha seleccionada.");
+        return;
+      }
+
       const [year, month, day] = dateInput.split('-').map(num => parseInt(num, 10));
       const reservationDate = new Date(Date.UTC(year, month - 1, day));
       const dayOfWeek = reservationDate.getUTCDay();
@@ -222,7 +340,7 @@
         return;
       }
 
-      // 3) Asegurar que haya escogido hora
+      // 3) Validar hora
       const timeValue = document.getElementById('time').value;
       if (!timeValue) {
         alert("Por favor selecciona una hora de llegada.");
@@ -242,6 +360,7 @@
         alert(text);
         form.reset();
         document.getElementById('time').innerHTML = "";
+        document.getElementById('dateMessage').textContent = "";
       })
       .catch(err => {
         console.error('Error:', err);
