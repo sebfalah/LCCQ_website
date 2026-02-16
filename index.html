@@ -582,8 +582,8 @@
         <h3 class="closure-title">La Casa del Cangrejo</h3>
         <img class="closure-logo" src="images/logo.png" alt="Logo La Casa del Cangrejo">
         <p class="closure-text">
-          <strong>¡Hola!</strong> Debido a la <em>veda de cangrejo</em> estaremos cerrados desde el <strong>22 de agosto</strong> hasta el <strong>15 de septiembre</strong>.<br>
-          Atendemos con normalidad a partir del <strong>16 de septiembre</strong>. <br>¡Te esperamos!
+          <strong>¡Hola!</strong> Debido a la <em>veda de cangrejo</em> estaremos cerrados hasta el <strong>3 de marzo de 2026</strong>.<br>
+          Atendemos con normalidad a partir del <strong>4 de marzo de 2026</strong>. <br>¡Te esperamos!
         </p>
       </div>
     </div>
@@ -593,7 +593,7 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
 
-    <!-- ===== Lógica para mostrar el modal sólo entre 2025-08-22 y 2025-09-15 en Quito ===== -->
+    <!-- ===== Lógica para mostrar el modal durante cierre por veda en Quito ===== -->
     <script>
     (function () {
         function getLocalDateStamp(tz) {
@@ -604,13 +604,13 @@
             month: '2-digit',
             day: '2-digit'
         }).format(now); 
-        return parts; // "2025-08-21"
+        return parts; // "YYYY-MM-DD"
         }
 
         const TZ = 'America/Guayaquil';
         const today = getLocalDateStamp(TZ);
-        const start = '2025-08-21'; // inclusive (cámbialo si deseas otro inicio)
-        const end   = '2025-09-15'; // inclusive
+        const start = '2026-02-16'; // inclusive
+        const end   = '2026-03-03'; // inclusive
 
         const withinWindow = (today >= start && today <= end);
 
