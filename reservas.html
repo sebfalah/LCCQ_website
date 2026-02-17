@@ -161,8 +161,8 @@
       <h3 class="closure-title">La Casa del Cangrejo</h3>
       <img class="closure-logo" src="images/logo.png" alt="Logo La Casa del Cangrejo">
       <p class="closure-text">
-        <strong>¡Hola!</strong> Debido a la <em>veda de cangrejo</em> estaremos cerrados hasta el <strong>3 de marzo de 2026</strong>.<br>
-        Atendemos con normalidad a partir del <strong>4 de marzo de 2026</strong>.<br> ¡Te esperamos!
+        <strong>¡Hola!</strong> Debido a la <em>veda de cangrejo</em> estaremos cerrados hasta el <strong>2 de marzo de 2026</strong>.<br>
+        Atendemos con normalidad a partir del <strong>3 de marzo de 2026</strong>.<br> ¡Te esperamos!
       </p>
     </div>
   </div>
@@ -183,7 +183,7 @@
     // ====== Ventana de cierre por veda ======
     const TZ = 'America/Guayaquil';
     const VEDA_START = '2026-02-16'; // inclusive
-    const VEDA_END   = '2026-03-03'; // inclusive
+    const VEDA_END   = '2026-03-02'; // inclusive
 
     function getLocalDateStamp(tz) {
       const now = new Date();
@@ -206,16 +206,16 @@
       }
     })();
 
-    // ====== Si hoy está dentro de la veda, guía al usuario a reservar desde 04/03/2026 ======
+    // ====== Si hoy está dentro de la veda, guía al usuario a reservar desde 03/03/2026 ======
     (function adjustDatePickerMinIfClosed(){
       const today = getLocalDateStamp(TZ);
       const dateInput = document.getElementById('date');
       const note = document.getElementById('dateNote');
 
       if (isWithinRange(today, VEDA_START, VEDA_END)) {
-        dateInput.min = '2026-03-04';
+        dateInput.min = '2026-03-03';
         note.style.display = 'block';
-        note.textContent = 'Las reservas estarán habilitadas a partir del 4 de marzo de 2026.';
+        note.textContent = 'Las reservas estarán habilitadas a partir del 3 de marzo de 2026.';
       }
     })();
 
@@ -259,7 +259,7 @@
 
       // 0) ¿Cae en la veda (bloqueo por rango)?
       if (isWithinRange(dateInput, VEDA_START, VEDA_END)) {
-        msgEl.textContent = "No hay reservas disponibles hasta el 3 de marzo de 2026 por veda de cangrejo.";
+        msgEl.textContent = "No hay reservas disponibles hasta el 2 de marzo de 2026 por veda de cangrejo.";
         this.value = "";
         clearTimeOnly();
         return;
@@ -323,7 +323,7 @@
 
       // 2a) Bloqueo por veda (rango)
       if (isWithinRange(dateInput, VEDA_START, VEDA_END)) {
-        alert("No hay reservas disponibles hasta el 3 de marzo de 2026 por veda de cangrejo.");
+        alert("No hay reservas disponibles hasta el 2 de marzo de 2026 por veda de cangrejo.");
         return;
       }
 		
